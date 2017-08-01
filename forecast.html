@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navcol">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="current.html">Current</a></li>
-                <li><a href="forecast.html">Forecase</a></li>
+                <li><a href="forecase.html">Forecase</a></li>
                 <li><a href="#">Wiki</a></li>
             </ul>
         </div>
@@ -42,18 +42,42 @@
             </div>
             <div class="row form-group form-inline text-center" id="cityDiv">
                 <input type="text" name="city" id="city" class="form-control" placeholder="Enter city name">
+                <input type="text" name="days" id="days" class="form-control" placeholder="Days..">
                 <button id="submitCity" class="btn btn-primary">Search City</button>
             </div>
         </div>
     </div>
 </div>
     
-<div id="error"></div>
-<div id="showWeather"></div>
-    
+<div class="container">
+    <div class="row">
+        <div class="header text-center" id="header"></div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Icon</th>
+                    <th>Weather</th>
+                    <th>Description</th>
+                    <th>Morning Temperature</th>
+                    <th>Night Temperature</th>
+                    <th>Min. Temperature</th>
+                    <th>Max. Temperature</th>
+                    <th>Pressure</th>
+                    <th>Humidity</th>
+                    <th>Wind speed</th>
+                    <th>Wind direction</th>
+                </tr>
+            </thead>
+            <tbody id="foreWeather">
+
+            </tbody>
+        </table>
+    </div>
+</div>   
+   
     
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+<script src="fore.js"></script>
 </body>
 </html>

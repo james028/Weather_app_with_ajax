@@ -14,7 +14,7 @@ function getWeather() {
             type: "GET",
             dataType: "jsonp",
             success: function(data) {
-            console.log(data);
+            //console.log(data);
             
             var widget = showResults(data);
             $("#showWeather").html(widget);
@@ -29,5 +29,8 @@ function getWeather() {
 
 
 function showResults(data) {
-    return "<p>Temperature" + data.main.temp + "</p>";
+    return "<p>Temperature: " + data.main.temp + "</p>" + 
+             "<p> Humidity: " + data.main.humidity + "</p>" + 
+            "<p> Wind: " + data.wind.speed + "</p>" +
+            "<p>Weather description: " + data.weather[0].description + "</P>";
 }
