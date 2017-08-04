@@ -4,6 +4,7 @@ $(document).ready(function() {
     });
 });
 
+
 function getFore() {
     var city = $("#city").val();
     var days = $("#days").val();
@@ -19,7 +20,7 @@ function getFore() {
                 
                 var table = '';
                 for (var i=0; i < data.list.length; i++) {
-                   table += "<tr>";
+                    table += "<tr>";
                     
                     table += "<td>" +data.list[i].weather[0].icon + "</td>";
                     table += "<td>" +data.list[i].weather[0].main + "</td>";

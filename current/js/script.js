@@ -5,6 +5,7 @@ $(document).ready(function() {
 });
 
 
+
 function getWeather() {
     var city = $("#city").val();
     
@@ -26,6 +27,7 @@ function getWeather() {
         $("#error").html("<div>City field cannot be empty</div>");
     }
 }
+
 
 
 function showResults(data) {
